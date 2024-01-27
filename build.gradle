@@ -23,7 +23,7 @@ apply plugin: 'maven'
 repositories {
     maven { // The repo from which to get waila
         name "Mobius Repo"
-        url "http://tehnut.info/maven"
+        url "https://maven.mcmoddev.com/"
     }
     maven { // TOP
         name 'tterrag maven'
