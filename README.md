@@ -2,4 +2,6 @@ This is a hacky fix for the Minecraft mod [notenoughwands'](https://github.com/r
 
 Feel free to download the .jar in the releases section.
 
+I made this mod while playing through FTB Revelation. I found a Potion Wand and quickly realized it was bugged. Took a look at the code and thought I could figure it out. Never done any modding before, so let me know if there's anything I should have done differently.
+
 Todo: remove potion effects from wand with empty bottle.
