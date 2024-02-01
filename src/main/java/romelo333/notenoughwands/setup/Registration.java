@@ -40,4 +40,18 @@ public class Registration {
         }
     }
 
+    
+
+    @SubscribeEvent
+    public static void registerRecipes(RegistryEvent.Register<IRecipe> event){
+        ///From here down added by Gare to implement potion wands. TBH I have no idea what i'm doing, so it's ugly.
+        //ResourceLocation addPotionLocation = new ResourceLocation(NotEnoughWands.MODID, "add_potion");
+        //GameRegistry.addShapelessRecipe(addPotionLocation, addPotionLocation, new ItemStack(ModItems.potionWand), Ingredient.fromItems(ModItems.potionWand), Ingredient.fromItems(Items.POTIONITEM));
+        NonNullList<Ingredient> ings = NonNullList.create();
+        ings.add(Ingredient.fromItems(ModItems.potionWand));
+        ings.add(Ingredient.fromItems(Items.POTIONITEM));
+        event.getRegistry().register(new AddPotionRecipe("add_potion_to_wand", new ItemStack(ModItems.potionWand), ings).setRegistryName(NotEnoughWands.MODID));
+
+    }
+
 }
