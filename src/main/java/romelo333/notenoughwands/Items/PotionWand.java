@@ -97,7 +97,7 @@ public class PotionWand extends GenericWand {
         }
         NBTTagCompound effecttag = effects.getCompoundTagAt(mode);
         PotionEffect effect = PotionEffect.readCustomPotionEffectFromNBT(effecttag);
-        Tools.notify(player, "Switched to " + getEffectName(effect) + " mode");
+        Tools.notify(player, "Switched mode");
         Tools.getTagCompound(stack).setInteger("mode", mode);
     }
 
